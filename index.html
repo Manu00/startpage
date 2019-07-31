@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basicgrid@3/dist/basicGrid.min.css">
+    <link rel="stylesheet prefetch" href="https://cdn.jsdelivr.net/npm/basicgrid@3/dist/basicGrid.min.css">
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="src/base.css">
     <title>Startpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body id="grad" class="main_bg" onload="clock();" onunload="stop();">
+    <div class="row bottom-on-small around-on-small between-on-large">
+        <div class="column small-4"></div>
+            <div class="column small-4">
+                <div class="searchbox">
+                    <form id="search-form" action="https://www.google.com/search?tbs=qdr:y&q=%s" method="get">
+                        <input id="search" type="text" name="q" autofocus="autofocus" autocomplete="off" placeholder="G Suche">
+                        <label for="search">
+                            <p style="text-align: center;">
+                            <span id="search-icon" class="fa fa-google">
+                            
+                            </span>
+                            </p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        <div class="column small-4"></div>
+    </div>
     <div id="firstcol" class="row bottom-on-small around-on-small between-on-large">
         <div class="column small-3 be">
             <div id="clo" class="clo"><p><span id="clock"></span></p></div>
